@@ -1,90 +1,92 @@
 import styles from "./MenuCards.module.css";
 
-
 const menu = [
   {
     id: 1,
     tittel: "Spaghetti Bolognese",
     pris: "159 kr",
     ingredienser: "Spaghetti, kjøttsaus, parmesan",
-    kategori: "Hovedrett",
+    kategori: "Hovedrett"
   },
   {
     id: 2,
     tittel: "Kremet Kyllingsuppe",
     pris: "129 kr",
     ingredienser: "Kylling, fløte, gulrøtter, selleri",
-    kategori: "Forrett",
+    kategori: "Forrett"
   },
   {
     id: 3,
     tittel: "Margarita Pizza",
     pris: "169 kr",
     ingredienser: "Tomatsaus, mozzarella, basilikum",
-    kategori: "Hovedrett",
+    kategori: "Hovedrett"
   },
   {
     id: 4,
     tittel: "Sushi Mix",
     pris: "229 kr",
     ingredienser: "Laks, tunfisk, reker, ris",
-    kategori: "Hovedrett",
+    kategori: "Hovedrett"
   },
   {
     id: 5,
     tittel: "Cæsarsalat",
     pris: "139 kr",
     ingredienser: "Romanosalat, kylling, parmesan, dressing",
-    kategori: "Forrett",
+    kategori: "Forrett"
   },
   {
     id: 6,
     tittel: "Brownie med Is",
     pris: "89 kr",
     ingredienser: "Brownie, vaniljeis, sjokoladesaus",
-    kategori: "Dessert",
+    kategori: "Dessert"
   },
   {
     id: 7,
     tittel: "Taco Tallerken",
     pris: "199 kr",
     ingredienser: "Kjøttdeig, mais, ost, guacamole",
-    kategori: "Hovedrett",
+    kategori: "Hovedrett"
   },
   {
     id: 8,
     tittel: "Pannekaker med Syltetøy",
     pris: "99 kr",
     ingredienser: "Pannekaker, jordbærsyltetøy, sukker",
-    kategori: "Dessert",
+    kategori: "Dessert"
   },
   {
     id: 9,
     tittel: "Reker med Sitron",
     pris: "149 kr",
     ingredienser: "Reker, sitron, dill, brød",
-    kategori: "Forrett",
+    kategori: "Forrett"
   },
   {
     id: 10,
     tittel: "Entrecôte med Grønnsaker",
     pris: "289 kr",
     ingredienser: "Entrecôte, asparges, poteter, peppersaus",
-    kategori: "Hovedrett",
+    kategori: "Hovedrett"
   },
 ];
-
 
 const MenuCard = () => {
   return (
     <>
       {menu.map((menu) => {
         return (
-          <div key={menu.id} className={styles.menuCard}>
-            <h2 className={styles.header}>{menu.tittel}</h2>
-            <p>{menu.kategori}</p>
-            <p>{menu.ingredienser}</p>
-            <p><u>{menu.pris}</u></p>
+          <div key={menu.id}>
+            <div className={styles.menuCard}>
+              <h2 className={styles.header}>{menu.tittel}</h2>
+              <p>{menu.kategori}</p>
+              <p><b>Ingredienser:</b> {menu.ingredienser}</p>
+              <p>
+                <u>{menu.pris}</u>
+              </p>
+            </div>
           </div>
         );
       })}
