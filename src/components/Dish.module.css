@@ -1,8 +1,4 @@
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 .menuContainer{
     display: grid;
     grid-template-columns: repeat(2, 1fr);

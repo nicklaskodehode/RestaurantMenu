@@ -1,5 +1,5 @@
-import MenuList from "./Menu";
 import styles from "./Dish.module.css";
+import MenuList from "./menu";
 
 const Dish = (props) => {
     return (
