@@ -1,7 +1,7 @@
-body {
+.header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #eceeeb;
-    margin: 0;
+    width: 95vw;
+    gap: 20px;
 }

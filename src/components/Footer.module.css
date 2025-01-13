@@ -1,0 +1,11 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footerInfo{
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    align-items: center;
+}

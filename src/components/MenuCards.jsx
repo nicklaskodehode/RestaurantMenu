@@ -1,4 +1,4 @@
-import styles from "./Menu.module.css";
+import styles from "./MenuCards.module.css";
 
 
 const menu = [
@@ -75,7 +75,7 @@ const menu = [
 ];
 
 
-const MenuList = () => {
+const MenuCard = () => {
   return (
     <>
       {menu.map((menu) => {
@@ -92,4 +92,4 @@ const MenuList = () => {
   );
 };
 
-export default MenuList;
+export default MenuCard;

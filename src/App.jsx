@@ -1,11 +1,14 @@
 import './App.css'
-import Dish from './components/Dish';
+import CardList from './components/CardList';
+import Header from './components/Header';
+import Footer from './components/Footer';
 
 function App() {
   return (
     <>
-    <h1>Restaurant Menu</h1>
-      <Dish/>
+      <Header/>
+      <CardList/>
+      <Footer/>
     </>
   )
 }
