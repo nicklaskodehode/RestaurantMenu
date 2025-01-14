@@ -2,7 +2,7 @@
   "name": "restaurantmenu",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://gitname.github.io/RestaurantMenu",
+  "homepage": "https://nicklaskodehode.github.io/RestaurantMenu",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
